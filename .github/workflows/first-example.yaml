@@ -18,7 +18,7 @@ jobs:
           run: touch sample.txt
         
         - name: write file
-          run:  echo "Hello there" >> sample.txt"
+          run:  echo "Hello there" >> sample.txt
         
         - name: read file
           run: cat sample.txt
