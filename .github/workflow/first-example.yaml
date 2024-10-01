@@ -1,0 +1,23 @@
+name: my first workflow
+
+on: push
+
+jobs:
+  first_job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: welcome message
+          run: echo "Hello Github"
+        
+        - name: execute command
+          run: ls
+        
+        - name: create file
+          run: touch sample.txt
+        
+        - name: write file
+          run: "Hello there" >> sample.txt
+        
+        - name: read file
+          run: cat sample.txt
+
